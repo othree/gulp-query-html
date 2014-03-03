@@ -1,0 +1,18 @@
+{
+    "name": "gulp-query-html",
+    "homepage": "https://github.com/othree/gulp-query-html",
+    "repository": "https://github.com/othree/gulp-query-html.git",
+    "author": "othree (https://github.com/othree)",
+    "main": "./index.js",
+    "keywords": [
+        "gulpplugin"
+    ],
+    "dependencies": {
+        "gulp-util": "~2.2.1",
+        "event-stream": "~3",
+        "cheerio": "*"
+    },
+    "devDependencies": {
+        "gulp": "*"
+    }
+}
