@@ -14,6 +14,12 @@
         "cheerio": "*"
     },
     "devDependencies": {
-        "gulp": "*"
+        "gulp": "*",
+        "mocha": "*",
+        "should": "*",
+        "gulp-util": "*"
+    },
+    "scripts": {
+        "test": "mocha"
     }
 }
