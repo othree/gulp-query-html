@@ -1,5 +1,5 @@
-USE
----
+USAGE
+-----
 
 Grab every thing in `<body>` and reaplce the file. Useful when you only want something in the HTML files.
 
