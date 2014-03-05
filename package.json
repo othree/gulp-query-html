@@ -1,6 +1,6 @@
 {
     "name": "gulp-query-html",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "homepage": "https://github.com/othree/gulp-query-html",
     "repository": "https://github.com/othree/gulp-query-html.git",
     "author": "othree (https://github.com/othree)",
@@ -21,5 +21,6 @@
     },
     "scripts": {
         "test": "mocha"
-    }
+    },
+    "license": "MIT"
 }
