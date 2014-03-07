@@ -5,8 +5,11 @@ var Buffer = require('buffer').Buffer;
 
 var cheerio = require('cheerio');
 
-module.exports = function (query) {
+module.exports = function (query, options) {
   "use strict";
+
+  options = options || {};
+  var outer = options.outer || false;
 
   var queryHtml = function (file) {
     if (file.isNull()) { return this.emit('data', file); } // pass along
@@ -15,7 +18,14 @@ module.exports = function (query) {
     var str = file.contents.toString('utf8');
     var $ = cheerio.load(str);
 
-    file.contents = new Buffer($(query).html());
+    var result = '';
+
+    if (outer) {
+      result = $.html(query);
+    } else {
+      result = $(query).html();
+    }
+    file.contents = new Buffer(result);
     this.emit('data', file);
   };
 
